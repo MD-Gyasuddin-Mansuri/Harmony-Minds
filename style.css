@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #5F8277;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-menu a {
+  color: white;
+  text-decoration: none;
+  background-color: #22514E;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 5%;
+  background-color: #DCE9E8;
+  min-height: calc(100vh - 104px);
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  color: #22514E;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 600px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #22514E;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/* Hotlines Section */
+.hotlines {
+  flex: 1; /* Ensures that this section takes up all available height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  min-height: calc(100vh - 144px);
+}
+
+
+/* Hotlines Section */
+.hotlines {
+  flex-grow: 1; /* Take up all available space between navbar and footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px; /* Add some padding for breathing space */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hotlines h1 {
+  color: #22514E;
+  margin-bottom: 40px;
+}
+
+.hotline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hotline-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.hotline-item h2 {
+  font-size: 1.5rem;
+  color: #22514E;
+}
+
+.hotline-item p {
+  color: #555;
+  font-size: 1rem;
+}
+
+
+
+/* Blog Sections */
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blog-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  padding: 20px;
+}
+
+.blog-card-content h3 {
+  font-size: 1.4rem;
+  color: #22514E;
+  margin-bottom: 10px;
+}
+
+.blog-card-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #22514E;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
